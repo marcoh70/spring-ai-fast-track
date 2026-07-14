@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: openai
+# Prperties to run Ollama locally
+  ai:
+#    model:
+#      chat: ollama
+#    ollama:
+#      chat:
+#        model: llama3.2
+# Properties to run OpenAi
+    #  ai:
+    openai:
+      api-key: ${OPEN_API_KEY}
+# Property for multi models
+    chat:
+      client:
+        enabled: false
+  # Properties to run gemma3 on Docker
+#  ai:
+#    openai:
+#      #api-key: ${OPEN_API_KEY}
+#      api-key: dummy
+#      chat:
+#        model: ai/gemma3
+#        base-url: http://localhost:12434/engines/v1
+
+  # Properties to run with AWS Bedrock
+#  ai:
+#    bedrock:
+#      aws:
+#        region: us-east-2
+#        access-key:
+#        secret-key:
+#      converse:
+#        chat:
+#          model:
+#    model:
+#      chat: bedrock-converse
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+  pattern:
+    console: "%green(%d{HH:mm:SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n"
+
+
+
