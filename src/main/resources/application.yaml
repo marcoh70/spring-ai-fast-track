@@ -17,26 +17,27 @@ spring:
       client:
         enabled: false
   # Properties to run gemma3 on Docker
-#  ai:
-#    openai:
-#      #api-key: ${OPEN_API_KEY}
-#      api-key: dummy
-#      chat:
-#        model: ai/gemma3
-#        base-url: http://localhost:12434/engines/v1
+  #  ai:
+  #    openai:
+  #      #api-key: ${OPEN_API_KEY}
+  #      api-key: dummy
+  #      chat:
+  #        model: ai/gemma3
+  #        base-url: http://localhost:12434/engines/v1
 
   # Properties to run with AWS Bedrock
-#  ai:
-#    bedrock:
-#      aws:
-#        region: us-east-2
-#        access-key:
-#        secret-key:
-#      converse:
-#        chat:
-#          model:
-#    model:
-#      chat: bedrock-converse
+  #  ai:
+
+  #    bedrock:
+  #      aws:
+  #        region: us-east-2
+  #        access-key:
+  #        secret-key:
+  #      converse:
+  #        chat:
+  #          model:
+  #    model:
+  #      chat: bedrock-converse
 
       memory:
         repository:

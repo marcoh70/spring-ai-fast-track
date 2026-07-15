@@ -34,6 +34,9 @@ public class ChatClientConfig {
                 .build();
     }
 
+    /*
+        We need to configure ollama instead adding properties in our application.yaml file when running multimodels apps
+     */
     @Bean
     public ChatClient ollamaChatClient(OllamaChatModel ollamaChatModel) {
         return ChatClient.builder(ollamaChatModel)
